@@ -7,6 +7,7 @@ export default function List({data}) {
         <p>
           <b>{person.Cargo}</b>
         </p>
+        <p>{person.entidad}</p>
         <p>{person.Descripcion}</p>
       </li>
     );
