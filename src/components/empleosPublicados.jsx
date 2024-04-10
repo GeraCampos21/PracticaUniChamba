@@ -12,7 +12,7 @@ export default function List({data}) {
       </li>
     );
     return (
-         <div className=' bg-primary/40 rounded-xl shadow-xl mt-3  '>
+         <div className='flex basis-4/6 bg-primary/40 rounded-xl shadow-xl mt-3  '>
             <div className="md:flex"> 
             <ul className="p-8 mr-10  overflow-y-scroll">
             {listItems}

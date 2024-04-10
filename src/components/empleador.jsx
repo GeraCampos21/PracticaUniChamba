@@ -16,19 +16,19 @@ export default function Empleador({job}){
                     <div className='text-xl  '><p > <strong>ListaPro</strong></p></div>
                     <p className='text-xs mt-1'>{job.Cargo}</p>
                     <p className='text-justify text-xs mt-1'>{job.Descripcion}</p>
-                    <h1 className='text-base mt-1'><strong>Acerca de:</strong></h1>
+                    <p className='text-base mt-1'><strong>Acerca de:</strong></p>
                     <p className=' text-justify text-xs mt-1'> {job.acercaDe}</p>
-                    <h1 className='text-base mt-3' ><ion-icon name="call"></ion-icon> <strong className='ml-1'> Teléfono:</strong></h1>
+                    <p className='text-base mt-3' ><ion-icon name="call"></ion-icon> <strong className='ml-1'> Teléfono:</strong></p>
                     <p className='text-sm ml-7'>{job.Telefono}</p>
-                    <h1 className='text-base mt-1'> <ion-icon name="mail-outline"></ion-icon><strong className='ml-2'>Email:</strong> </h1>
+                    <p className='text-base mt-1'> <ion-icon name="mail-outline"></ion-icon><strong className='ml-2'>Email:</strong> </p>
                     <p className='text-sm ml-7 text-sky-500'>{job.Email}</p>
-                    <h1 className='text-base'><ion-icon name="location-sharp"></ion-icon><strong className='ml-2' >Dirección:</strong></h1>
+                    <p className='text-base'><ion-icon name="location-sharp"></ion-icon><strong className='ml-2' >Dirección:</strong></p>
                     <p className='text-sm ml-7 mt-100'>{job.Direccion}</p>
                 </div>
 
                 {/**Este es el div del contenido que llevara lo que es el botton*/}
                 <div className='flex justify-center '>
-                    <button className='bg-primary text-fuchsia-50 text-xs px-10 py-1 rounded-lg' > Contacta conmigo <ion-icon name="chatbox-outline"></ion-icon></button>
+                    <button className='bg-primary text-fuchsia-50 text-xs px-10 py-1 rounded-lg' > Contacta Conmigo <ion-icon name="chatbox-outline"></ion-icon></button>
                 </div>
             </div>
         </>
@@ -40,7 +40,6 @@ Empleador.propTypes = {
       Cargo: PropTypes.string.isRequired, // Valida que job.Cargo sea una cadena de texto requerida
       Descripcion: PropTypes.string.isRequired,
       acercaDe: PropTypes.string.isRequired,
-      FechaDePublicacion: PropTypes.string.isRequired,
       Telefono: PropTypes.string.isRequired,
       Email: PropTypes.string.isRequired,
       Direccion: PropTypes.string.isRequired,
