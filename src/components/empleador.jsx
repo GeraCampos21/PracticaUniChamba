@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 // eslint-disable-next-line react/prop-types
 export default function Empleador({job}){
     return (
@@ -6,7 +6,7 @@ export default function Empleador({job}){
             {/**Este es el div para el primer componente */}
             <div className='flex  flex-col justify-between space-y-28  bg-primary/40 rounded-xl  md:max-w-xs px-4 py-5 pt-1' >
                 <div>
-                    
+
                     {/**Este es el div del contenido del logo de la empresa*/}
                     <p className='flex justify-end mb-1 text-xs'>Empleador</p>
                     <div className='ml-5 mb-1 active-icon '>
@@ -33,6 +33,16 @@ export default function Empleador({job}){
             </div>
         </>
     );
-};
+}
 
- 
+Empleador.propTypes = {
+    job: PropTypes.shape({
+      Cargo: PropTypes.string.isRequired, // Valida que job.Cargo sea una cadena de texto requerida
+      Descripcion: PropTypes.string.isRequired,
+      acercaDe: PropTypes.string.isRequired,
+      FechaDePublicacion: PropTypes.string.isRequired,
+      Telefono: PropTypes.string.isRequired,
+      Email: PropTypes.string.isRequired,
+      Direccion: PropTypes.string.isRequired,
+    }).isRequired
+};
